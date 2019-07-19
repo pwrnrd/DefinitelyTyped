@@ -45,14 +45,18 @@ export interface AppMetadata {
 export interface UserData<A = AppMetadata, U=UserMetadata> {
   email?: string;
   username?: string;
+  blocked?: boolean;
   email_verified?: boolean;
   verify_email?: boolean;
   password?: string;
   phone_number?: string;
   phone_verified?: boolean;
+  user_id?: string;
   given_name?: string;
   family_name?: string;
   name?: string;
+  nickname?: string;
+  picture?: string;
   user_metadata?: U;
   app_metadata?: A;
 }
